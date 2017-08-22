@@ -1,0 +1,19 @@
+{
+  "name": "travelr-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigneshwerv/travelr-frontend.git"
+  },
+  "author": "Nishaanth Narayanan, Vigneshwer Vaidyanathan",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vigneshwerv/travelr-frontend/issues"
+  },
+  "homepage": "https://github.com/vigneshwerv/travelr-frontend#readme"
+}
