@@ -1,20 +1,14 @@
 const path = require('path');
 const plugins = require('./plugins');
+const modules = require('./module');
 const R = require('ramda');
 
-module.exports = R.merge({
+module.exports = R.mergeAll([
+  {
     entry: './src/index.js',
     output: {
       path: path.join(__dirname, '..', 'dist'),
       filename: 'index-[hash].js'
-    },
-    module: {
-      rules: [
-        {
-          test: /\.(js|jsx)$/,
-          loader: 'babel-loader'
-        }
-      ],
     },
     resolve: {
       extensions: ['.js', '.jsx']
@@ -25,5 +19,6 @@ module.exports = R.merge({
       hot: true,
     },
   },
-  plugins
-);
+  plugins,
+  modules
+]);
