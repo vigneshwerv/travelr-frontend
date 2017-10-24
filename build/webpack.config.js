@@ -8,6 +8,17 @@ module.exports = R.merge({
       path: path.join(__dirname, '..', 'dist'),
       filename: 'index-[hash].js'
     },
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          loader: 'babel-loader'
+        }
+      ],
+    },
+    resolve: {
+      extensions: ['.js', '.jsx']
+    },
     devtool: 'inline-source-map',
     devServer: {
       contentBase: './dist',

@@ -1,3 +1,11 @@
-const a = 10;
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 
-module.exports = a;
+
+class HelloWorld extends Component {
+  render () {
+    return (<p>Hello World</p>);
+  }
+};
+
+ReactDOM.render(<HelloWorld />, document.getElementById('root'));
